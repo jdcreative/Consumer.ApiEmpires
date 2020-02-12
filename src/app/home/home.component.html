@@ -1,0 +1,31 @@
+<div>
+    <div *ngFor="let item of array"  style="width: 280px; height: 280px; background: whitesmoke;margin-left: 
+    15px;margin-right: 15px; margin-top:20px; display: inline-block; border-radius: 14px;">
+
+        <div class="card cardUnit">
+            <div class="card-content">
+                <div class="media mediaUnit">
+                    <div class="media-left">
+                        <figure >
+                            <img class="imagenIco" src="../../assets/escudo.png">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <p class="title is-3 titleUni" >{{item.name | uppercase}}</p>
+                        <p class="subtitle is-5 titleUni">{{item.age ? item.age : 'N/A'}}</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <p class="subtitle is-3 titleUni">{{item.description ? item.description : 'N/A'}}</p>
+                    
+                    <p class="subtitle is-5 titleUni">Gold: {{item.cost['Gold'] ? item.cost['Gold'] : 'N/A' }}</p>
+                    <p class="subtitle is-5 titleUni">Wood: {{item.cost['Wood'] ? item.cost['Wood'] : 'N/A' }}</p>
+                    <p class="subtitle is-5 titleUni">Food: {{item.cost['Food'] ? item.cost['Food'] : 'N/A' }}</p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
